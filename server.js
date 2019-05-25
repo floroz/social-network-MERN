@@ -3,7 +3,7 @@ const connectDB = require('./config/db');
 const usersRouter = require('./routes/api/users');
 const authRouter = require('./routes/api/auth');
 const profileRouter = require('./routes/api/profile');
-const postRouter = require('./routes/api/post');
+const postsRouter = require('./routes/api/posts');
 const app = express();
 
 // Connect Database
@@ -26,8 +26,8 @@ app.use('/api/auth', authRouter);
 // API/PROFILE
 app.use('/api/profile', profileRouter);
 
-// API/POST
-app.use('/api/post', postRouter);
+// API/POSTS
+app.use('/api/posts', postsRouter);
 
 // SERVER SETUP
 const PORT = process.env.PORT || 5000;
