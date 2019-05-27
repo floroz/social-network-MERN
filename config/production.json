@@ -1,0 +1,6 @@
+{
+	"mongoURI": "mongodb+srv://dtortora:Ammaluto1987@mern-social-network-dxbwx.mongodb.net/test?retryWrites=true",
+	"jwtSecret": "mysecrettoken",
+	"githubClientId": "cbae6e10217f56b35821",
+	"githubSecret": "740378afeb9d19fabea3979730b836ce788c431e"
+}
