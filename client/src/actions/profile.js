@@ -103,7 +103,6 @@ export const createProfile = (
 			history.push('/dashboard');
 		}
 	} catch (err) {
-		console.log(err);
 		const errors = err.response.data.errors;
 
 		if (errors) {
@@ -137,7 +136,6 @@ export const addExperience = (formData, history) => async dispatch => {
 
 		history.push('/dashboard');
 	} catch (err) {
-		console.log(err);
 		const errors = err.response.data.errors;
 
 		if (errors) {
@@ -171,7 +169,6 @@ export const addEducation = (formData, history) => async dispatch => {
 
 		history.push('/dashboard');
 	} catch (err) {
-		console.log(err);
 		const errors = err.response.data.errors;
 
 		if (errors) {
