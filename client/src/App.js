@@ -16,6 +16,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import AddExperience from './components/Profile-Forms/AddExperience';
 import AddEducation from './components/Profile-Forms/AddEducation';
+import Profiles from './components/Profiles/Profiles';
 
 if (localStorage.token) {
 	setToken(localStorage.token);
@@ -37,6 +38,7 @@ const App = () => {
 						<Switch>
 							<Route exact path="/login" component={Login} />
 							<Route exact path="/register" component={Register} />
+							<Route exact path="/profiles" component={Profiles} />
 							<PrivateRoute exact path="/dashboard" component={Dashboard} />
 							<PrivateRoute
 								exact
