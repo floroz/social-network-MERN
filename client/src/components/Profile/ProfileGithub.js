@@ -8,7 +8,7 @@ const ProfileGithub = ({ username, getGithubRepos, repos }) => {
 	useEffect(() => {
 		getGithubRepos(username);
 		console.log(repos);
-	}, [getGithubRepos, username]);
+	}, [getGithubRepos, username, repos]);
 
 	return (
 		<div className="profile-github">
